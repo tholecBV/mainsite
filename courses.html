@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Thomas Lefever-Teughels"> 
     <title>Tholec</title>
- 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 
     
 
@@ -66,6 +66,11 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+	  /* custom to get rid of additional padding from carousel... */
+	  body{
+	  padding-top: 0!important;
+	  padding-bottom: 0!important;
+	  }
     </style>
 
     
@@ -73,13 +78,31 @@
   <body>
     
 <header> 
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container"> 
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <strong>Tholec</strong>
-      </a> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Tholec</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">Experience</a>
+          </li>  
+		  <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="dataerasure.html">Data erasure</a>
+          </li>
+        </ul> 
+      </div>
     </div>
-  </div>
+  </nav>
 </header>
 
 <main>
@@ -168,8 +191,9 @@
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1">
-	  <a href="mailto:thomas@tholec.com">Email</a>
-      <a href="https://www.linkedin.com/in/thomas-lefever-teughels/">Linkedin</a>
+	Contact:
+	  <a href="mailto:thomas@tholec.com"><i class="bi bi-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/thomas-lefever-teughels/"><i class="bi bi-linkedin"></i></a>
     </p>
     <p class="mb-1">&copyTholec</p>
   </div>
